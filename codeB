@@ -1,0 +1,55 @@
+// Inheritance .....Is a relationship
+package A3;
+class Electronic_Item {
+    void display(){
+        System.out.println("it is a electronic item");
+    }
+    void show(){
+        System.out.println("it work by electricity");
+    }
+    void useful(){
+        System.out.println("its soo useful");
+    }
+}
+class Refrigerator extends Electronic_Item{
+    String cnm;
+    int p;
+    void work(){
+        System.out.println("Refrigerator company name :"+"...."+cnm);
+        System.out.println("LG Refrigerator price:"+"...."+p);
+        System.out.println("Refrigerator keep fruits and food cool ");
+    }
+}
+class Washing_Machine extends Electronic_Item{
+    String c;
+    int p2;
+    void work1(){
+        System.out.println("Washing_Machine company name :"+"...."+c);
+        System.out.println("SAMSUNG Washing_Machine price:"+"...."+p2);
+        System.out.println("Washing_Machine wash clothes");
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        Refrigerator r = new Refrigerator();
+        Washing_Machine w = new Washing_Machine();
+        System.out.println("1st item ****************");
+        System.out.println("Refrigerator");
+        r.cnm="LG";
+        r.p=23000;
+        r.work();
+        r.display();
+        r.show();
+        r.useful();
+        System.out.println("2nd item *************");
+        System.out.println("Washing_Machine");
+        w.c="SAMSUNG";
+        w.p2=21000;
+        w.work1();
+        w.display();
+        w.show();
+        w.useful();
+
+    }
+}
+
